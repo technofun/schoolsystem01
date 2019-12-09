@@ -40,7 +40,7 @@
 
 {% block body%}
 <h1>i am Admin</h1>
-<form  class="form-register" action="/addTeacher" method="POST">
+<form  class="form-register" action="/admin/addTeacher" method="POST">
     <h2>Add Teacher</h2>
 <input type="text"  class="form-control" name="Username" placeholder="UserName" required><br>
 <input type="text"  class="form-control" name="cell_no" maxlength="11"placeholder="Mobile Phone" required><br>
@@ -51,7 +51,12 @@
 <input  class="form-check-input" type="radio" name="gender" value="male">
 <label for="female"  class="form-check-label">Female_ </label>
 <input type="radio" class="form-check-input" name="gender" value="female">
-</div>
+</div><br>
+<select name="role">
+<option value="Teacher">Teacher</option>
+<option value="Student">Student</option>
+</select>
+
 <br><br>
 <button class="btn btn-primary" type="submit">Add Teacher</button>
 </form>
